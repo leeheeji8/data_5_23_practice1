@@ -1,0 +1,11 @@
+<h1>전체목록</h1>
+
+<% @data.each do |x| %>
+이름 : <%=x.name%><br>
+학교 : <%=x.school%><br>
+<a href="destroy_one/<%=x.id%>">삭제</a><br>
+===============================<br>
+<% end %>
+
+<a href="/">글쓰기</a>
+<a href="destroy_all">전체삭제</a>
